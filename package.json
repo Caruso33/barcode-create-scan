@@ -2,7 +2,9 @@
   "name": "barcode-create-scan",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://caruso33.github.io/barcode-create-scan",
   "dependencies": {
+    "gh-pages": "^1.1.0",
     "jsbarcode": "^3.9.0",
     "quagga": "^0.12.1",
     "react": "^16.3.2",
@@ -11,6 +13,8 @@
     "react-scripts": "1.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
